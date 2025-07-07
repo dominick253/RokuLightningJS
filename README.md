@@ -39,6 +39,7 @@ npm install -g @lightningjs/cli
 ```
 
 <h1>Create your Lightning app:</h1>
+
 ```bash
 lng create my-lightning-app
 cd my-lightning-app
@@ -46,11 +47,13 @@ cd my-lightning-app
 
 
 <h1>3. Develop and Test:</h1>
+
 ```bash
 lng dev
 ```
 
 <h1>4. Build the app</h1>
+
 ```bash
 lng build
 ```
@@ -61,6 +64,7 @@ lng build
 Since Roku does not run web apps directly, we use a BrightScript + SceneGraph wrapper that loads the Lightning Renderer with your app.
 
 <h1>1. Create roku-wrapper/manifest</h1>
+
 ```plaintext
 title=LightningApp
 major_version=1
@@ -71,6 +75,7 @@ mm_icon_focus_sd=pkg:/images/icon_focus_sd.png
 ```
 
 <h1>2. Create roku-wrapper/main.brs</h1>
+
 ```brightscript
 sub Main()
     screen = CreateObject("roSGScreen")
@@ -91,6 +96,7 @@ end sub
 
 
 <h1>Package Your Roku App</h1>
+
 1. Place your Lightning build inside roku-wrapper/pkg/lightning-bundle/.
 
 2. Zip the contents of roku-wrapper/ (not the folder itself).
