@@ -8,25 +8,25 @@ Please see the above website for more information.
 
 
 <h1>Roadmap</h1>
- Create minimal BrightScript wrapper
+ <ol>Create minimal BrightScript wrapper
 
  Automate build steps with scripts
 
  CI/CD pipeline for .zip and .apk generation
 
- Add sample Lightning components
+ Add sample Lightning components</ol>
 
 
 
 <h1>Project Structure</h1>
-RokuLightningJS/
+"RokuLightningJS/
 ├── lightning-app/ # Your Lightning JS app
 ├── roku-wrapper/ # BrightScript wrapper for Roku
 │ ├── manifest
 │ ├── main.brs
 │ ├── source/
 │ └── pkg/
-└── android-wrapper/ # (Optional) WebView wrapper for Android TV / Fire TV
+└── android-wrapper/ # (Optional) WebView wrapper for Android TV / Fire TV"
 
 
 
