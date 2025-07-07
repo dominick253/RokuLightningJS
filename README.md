@@ -33,7 +33,7 @@ RokuLightningJS/
 
 
 
-<h1>1. **Install Lightning CLI:**</h1>
+<h1>1. Install Lightning CLI:</h1>
 
 ```bash
 npm install -g @lightningjs/cli
