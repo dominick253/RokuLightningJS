@@ -43,7 +43,7 @@ RokuLightningApp/
 npm install -g @lightningjs/cli
 ```
 
-<h1>Create your Lightning app:</h1>
+<h1>2. Create your Lightning app:</h1>
 
 ```bash
 lng create my-lightning-app
