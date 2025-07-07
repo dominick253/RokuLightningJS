@@ -1,4 +1,4 @@
-# RokuLightningJS
+<h1>RokuLightningJS</h1>
 How to transition, and setup, a Roku Brightscript and scenegraph app to LightningJS.
 
 I can't find any good documentation for Roku LightningJS, so I will make my own! Any contributions, typos, errors, please point out and help build this repo of information, including boilerplate and eventually starter templates. End goal is for a full CI/CD pipeline for all three platforms (Roku, Android TV, and Fire TV) to test, build, and deploy all versions automatically. 
@@ -8,7 +8,7 @@ Code Taken From https://rdkcentral.github.io/Lightning-SDK/#/getting-started
 Please see the above website for more information.
 
 
-Roadmap
+<h1>Roadmap</h1>
  Create minimal BrightScript wrapper
 
  Automate build steps with scripts
@@ -19,7 +19,7 @@ Roadmap
 
 
 
-Project Structure
+<h1>Project Structure</h1>
 RokuLightningJS/
 ├── lightning-app/ # Your Lightning JS app
 ├── roku-wrapper/ # BrightScript wrapper for Roku
@@ -32,35 +32,35 @@ RokuLightningJS/
 
 
 
-1. **Install Lightning CLI:**
+<h1>1. **Install Lightning CLI:**</h1>
 
 ```bash
 npm install -g @lightningjs/cli
 ```
 
-Create your Lightning app:
+<h1>Create your Lightning app:</h1>
 ```bash
 lng create my-lightning-app
 cd my-lightning-app
 ```
 
 
-3. Develop and Test:
+<h1>3. Develop and Test:</h1>
 ```bash
 lng dev
 ```
 
-4. Build the app
+<h1>4. Build the app</h1>
 ```bash
 lng build
 ```
 
 
 
-Prepare Roku Wrapper
+<h1>Prepare Roku Wrapper</h1>
 Since Roku does not run web apps directly, we use a BrightScript + SceneGraph wrapper that loads the Lightning Renderer with your app.
 
-1. Create roku-wrapper/manifest
+<h1>1. Create roku-wrapper/manifest</h1>
 ```plaintext
 title=LightningApp
 major_version=1
@@ -70,7 +70,7 @@ mm_icon_focus_hd=pkg:/images/icon_focus_hd.png
 mm_icon_focus_sd=pkg:/images/icon_focus_sd.png
 ```
 
-2. Create roku-wrapper/main.brs
+<h1>2. Create roku-wrapper/main.brs</h1>
 ```brightscript
 sub Main()
     screen = CreateObject("roSGScreen")
@@ -87,10 +87,10 @@ end sub
 ```
 
 
-3. Add roku-wrapper/source/MainScene.brs
+<h1>3. Add roku-wrapper/source/MainScene.brs</h1>
 
 
-Package Your Roku App
+<h1>Package Your Roku App</h1>
 1. Place your Lightning build inside roku-wrapper/pkg/lightning-bundle/.
 
 2. Zip the contents of roku-wrapper/ (not the folder itself).
@@ -107,7 +107,7 @@ Package Your Roku App
 
 
 
-Android TV / Fire TV Deployment
+<h1>Android TV / Fire TV Deployment</h1>
 While Roku requires a wrapper, Android TV and Fire TV can run your Lightning app inside a WebView:
 
 1. Create a basic Android Studio project.
