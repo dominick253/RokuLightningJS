@@ -1,3 +1,7 @@
+<h1>THIS IS A WORK IN PROGRESS, IT IS NOT DONE YET, FOLLOWING IT WILL NOT RESULT IN A WORKING APP YET</h1>
+
+Update: after further research it appears that a Canvas Rendering package is required to create the canvas element that lightning js will then use to display the UI, as in a webview app. I believe their first party partners (Netflix, Disney ect) have access to this, and internally they use it, but not released in an SDK for widespread development. Never the less I intend to be in the first wave of devs to transition their apps when it is available. In the mean time I will continue to work on the fire tv and android tv versions of the app, and it seems to be very effective for embeded TV devices with low power and ram. 
+
 How to transition, and setup, a Roku Brightscript and scenegraph app to LightningJS.
 
 I can't find any good documentation for Roku LightningJS, so I will make my own! Any contributions, typos, errors, please point out and help build this repo of information, including boilerplate and eventually starter templates. End goal is for a full CI/CD pipeline for all three platforms (Roku, Android TV, and Fire TV) to test, build, and deploy all versions automatically. 
